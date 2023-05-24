@@ -18,7 +18,7 @@ export default function Search() {
     const handleSearch = async () => {
         document.querySelector("#inputField").value = "";
 
-        const response = await axios.get("http://localhost:5001/address", {
+        const response = await axios.get("https://etherbackend.onrender.com/address", {
             params: { address: searchInput}
         });
 
